@@ -1,0 +1,29 @@
+<apex:page controller="CandidateRegistrationCustom" tabStyle="Candidate_Pratishtha__c" id="candypg">
+    <apex:form id="fm">
+        
+         <apex:pageBlock mode="edit" id="pgblock" title="Job Wizard" >
+             <apex:image value="{!URLFOR($Resource.EnzigmaLogo, 'Application_Image/enzigma-logo.png')}" width="220" height="100"/>
+
+             <apex:pageMessages />
+             <apex:pageBlockSection >
+              <apex:inputField value="{!candidate.Salutation__c }" id="sal"/>
+              <apex:inputField value="{!candidate.First_Name__c }" id="first"/>        
+              <apex:inputField value="{!candidate.Last_Name__c }" id="last"/>        
+              <apex:inputField value="{!candidate.Email__c }" id="email"/>
+    <apex:inputField value="{!candidate.DOB__c }" id="dob"/>
+    <apex:inputField value="{!candidate.Age__c }" />
+    <apex:inputField value="{!candidate.Country__c}" id="coun"/> 
+    <apex:inputField value="{!candidate.State__c }" id="state"/>
+    <apex:inputField value="{!candidate.Job__c }" id="job"/>
+    <apex:inputField value="{!candidate.Application_Date__c }" id="app"/>            
+    <apex:inputField value="{!candidate.Expected_Salary__c }" id="expect"/>
+    <apex:inputField value="{!candidate.Status__c }" id="stat"/>
+</apex:pageBlockSection>
+       
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{! save }" value="Save" />        
+
+           </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+    </apex:page>

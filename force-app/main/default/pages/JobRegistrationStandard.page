@@ -1,0 +1,28 @@
+<apex:page standardController="Job_Pratishtha__c">
+    <apex:form >
+    
+    <apex:pageBlock title="Create">
+        
+            <apex:pageBlockSection columns="1">
+    <apex:inputField value="{!Job_Pratishtha__c.Name__c}"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Description__c }"/>        
+    <apex:inputField value="{!Job_Pratishtha__c.Number_of_Positons__c }"/>        
+    <apex:inputField value="{!Job_Pratishtha__c.Expires_On__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Active__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Salary_Offered__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.ContactId__c}"/> 
+    <apex:inputField value="{!Job_Pratishtha__c.Total_Applicants__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Hired_Applicants__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Job_Type__c }"/>            
+    <apex:inputField value="{!Job_Pratishtha__c.Required_Skills__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Qualification_Required__c }"/>
+    <apex:inputField value="{!Job_Pratishtha__c.Certification_Required__c }"/>
+</apex:pageBlockSection>
+       
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{! save }" value="Save" />        
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

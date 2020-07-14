@@ -1,0 +1,7 @@
+<apex:component >
+  <apex:attribute name="record" description="Details"
+                  type="Object" required="false"/>
+                  <apex:pageBlock title="Job Details {!record}">
+                  <apex:detail />
+                  </apex:pageBlock>
+</apex:component>

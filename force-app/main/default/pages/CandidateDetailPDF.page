@@ -1,0 +1,14 @@
+<apex:page standardController="Candidate_Pratishtha__c" recordSetVar="candidate" renderAs="pdf">
+    
+        <apex:repeat var="item" value="{!candidate}">
+            <tr>
+                    <td>{!item.First_Name__c}</td>
+                    <td>{!item.Last_Name__c}</td>
+                    <td>{!item.Email__c}</td>
+                    <td>{!item.Country__c}</td>
+                    <td>{!item.State__c}</td>
+                
+            </tr>
+        </apex:repeat>  
+    
+</apex:page>

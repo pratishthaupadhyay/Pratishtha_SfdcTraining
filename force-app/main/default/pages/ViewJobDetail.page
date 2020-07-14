@@ -1,0 +1,3 @@
+<apex:page controller="JobDetailCustom" >
+     <c:RelatedListComponent records="{!records}" fields="{!fields}" job="{!jobRecord}" jobFields="{!jobFields}"></c:RelatedListComponent>
+</apex:page>
